@@ -1,0 +1,109 @@
+.footer {
+  background: #212121;
+  padding-top: rem(36px);
+  padding-bottom: rem(69px);
+  color: #fff;
+
+  @media (max-width: $tab) {
+    padding-bottom: rem(40px);
+  }
+
+  &__inner {
+    @media (max-width: $tab) {
+      padding-left: rem(30px);
+      padding-right: rem(30px);
+    }
+  }
+
+  &__block {
+    border-bottom: rem(2px) solid #424242;
+    padding-bottom: rem(115px);
+    padding-top: rem(63px);
+
+    @media (max-width: $tab) {
+      padding-top: rem(30px);
+      padding-bottom: rem(60px);
+    }
+
+    @media (max-width: $mobile) {
+      padding-bottom: rem(15px);
+    }
+
+
+    &.block-2 {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: rem(63px);
+
+      @media (max-width: $mobile) {
+        display: block;
+        padding-bottom: rem(30px);
+      }
+    }
+  }
+
+  &__title {
+    font-size: rem(22px);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: rem(40px);
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: $mobile) {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+
+    &.menu-2 {
+      width: rem(607px);
+
+      @media (max-width: $tab) {
+        width: rem(590px);
+      }
+
+      @media (max-width: $mobile) {
+        width: 100%;
+      }
+    }
+  }
+
+  &__column {
+    @media (max-width: $mobile) {
+      width: 30%;
+      margin-bottom: rem(16px);
+
+      &:not(:nth-child(3)) {
+        margin-right: 5%;
+      }
+    }
+  }
+
+  &__link {
+    font-size: rem(18px);
+    line-height: 1;
+    color: #f5f5f5;
+    display: block;
+
+    &:not(:last-child) {
+      margin-bottom: rem(16px);
+    }
+  }
+
+  &__copy {
+    margin-top: rem(16px);
+    color: #F5F5F5;
+    font-family: $fontOpen;
+    font-size: rem(15px);
+    line-height: 1.2;
+
+    .bold {
+      font-weight: 700;
+    }
+  }
+}
+
+

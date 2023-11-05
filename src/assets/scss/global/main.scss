@@ -1,0 +1,46 @@
+*{
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16/1920*100vw;
+
+  @media (max-width: $tab) {
+    font-size: 16/1024*100vw;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 16/460*100vw;
+  }
+}
+
+body {
+  font-family: $fontSource;
+  color: #424242;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+svg {
+  width: 100%;
+  height: auto;
+}
+
+.g-inner {
+  width: rem(1480px);
+  margin: auto;
+
+  @media (max-width: $tab) {
+    width: 100%;
+    padding-left: rem(15px);
+    padding-right: rem(15px);
+  }
+}
+
+a{
+  text-decoration: none;
+}

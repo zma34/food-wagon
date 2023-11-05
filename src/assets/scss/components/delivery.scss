@@ -1,0 +1,65 @@
+.delivery {
+  background: #FEEFD0;
+  padding-top: rem(130px);
+  padding-bottom: rem(80px);
+
+  @media (max-width: $mobile) {
+    padding-bottom: rem(50px);
+  }
+
+  &__blocks {
+    background: #FFFFFF;
+    box-shadow: 0 rem(14px) rem(15px) rgba(255, 174, 0, 0.01), 0 rem(27px) rem(82px) rgba(255, 174, 0, 0.28);
+    border-radius: rem(46px);
+    height: rem(246px);
+    width: rem(1230px);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: rem(55px);
+
+    @media (max-width: $tab) {
+      margin-right: rem(15px);
+      margin-left: rem(15px);
+      width: auto;
+    }
+
+    @media (max-width: $mobile) {
+      display: block;
+      height: auto;
+    }
+  }
+
+  &__block {
+    display: flex;
+    font-weight: 700;
+    font-size: rem(35px);
+    line-height: 1.2;
+    align-items: center;
+
+    color: #FFB800;
+
+    @media (max-width: $tab) {
+      font-size: rem(25px);
+    }
+
+    &:not(:first-child) {
+      margin-left: rem(113px);
+
+      @media (max-width: $mobile) {
+        margin-left: 0;
+        margin-top: rem(30px);
+      }
+    }
+  }
+
+  &__img {
+    width: rem(136px);
+    margin-right: rem(30px);
+
+    @media (max-width: $tab) {
+      width: rem(95px);
+    }
+  }
+
+}

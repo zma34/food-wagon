@@ -1,0 +1,114 @@
+.popular {
+
+  &__wrap {
+    position: relative;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: rem(43px);
+    line-height: 1.12;
+    text-align: center;
+    color: #212121;
+    margin-bottom: rem(88px);
+
+    @media (max-width: $tab) {
+      margin-bottom: rem(40px);
+    }
+  }
+
+  &__card {
+    width: rem(283px);
+    margin-right: rem(16px);
+
+    @media (max-width: $tab) {
+      width: rem(190px);
+      margin-right: rem(11px);
+    }
+
+    @media (max-width: $mobile) {
+      width: rem(210px);
+    }
+  }
+
+  &__img {
+    border-radius: rem(16px);
+    overflow: hidden;
+  }
+
+  &__name {
+    font-weight: 700;
+    font-size: rem(22px);
+    line-height: 1.2;
+    color: #424242;
+    margin-top: rem(16px);
+  }
+
+  &__shop {
+    display: flex;
+    font-size: rem(22px);
+    line-height: 1.2;
+    color: #FFB30E;
+    margin-top: rem(8px);
+
+    svg {
+      margin-right: rem(8px);
+      width: rem(14px);
+    }
+  }
+
+  &__price {
+    font-weight: 700;
+    font-size: rem(22px);
+    line-height: 1.2;
+    color: #212121;
+    margin-top: rem(8px);
+  }
+
+  &__button {
+    display: block;
+    font-weight: 700;
+    font-size: rem(18px);
+    line-height: rem(60px);
+    color: #FFFFFF;
+    box-shadow: 0 rem(5px) rem(10px) rgba(253, 114, 92, 0.22), 0 rem(20px) rem(40px) rgba(250, 99, 35, 0.24);
+    border-radius: rem(8px);
+    background: #F17228;
+    height: rem(60px);
+    margin-top: rem(16px);
+    margin-bottom: rem(80px);
+    text-align: center;
+  }
+
+  &__arr {
+    width: rem(76px);
+    height: rem(76px);
+    background: #FFB20E url("/assets/img/arr.svg") no-repeat center;
+    background-size: rem(18px);
+    box-shadow: 0 rem(5px) rem(8px) rgba(222, 151, 0, 0.24), 0 rem(14px) rem(32px) rgba(255, 178, 14, 0.29);
+    border-radius: 50%;
+    position: absolute;
+    top: rem(120px);
+
+    @media (max-width: $tab) {
+      top: rem(-100px);
+    }
+
+    &.left {
+      left: rem(-122px);
+
+      @media (max-width: $tab) {
+        left: 0;
+      }
+    }
+
+    &.right {
+      right: rem(-122px);
+      transform: scale(-1);
+
+      @media (max-width: $tab) {
+        right: 0;
+      }
+    }
+  }
+}

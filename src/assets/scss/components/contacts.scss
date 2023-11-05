@@ -1,0 +1,105 @@
+.contacts {
+  width: rem(483px);
+
+  @media (max-width: $tab) {
+    width: rem(315px);
+  }
+
+  @media (max-width: $mobile) {
+    width: 100%;
+  }
+
+  &__title {
+    color: #F5F5F5;
+    font-size: rem(18px);
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin-bottom: rem(40px);
+  }
+
+  &__links {
+    width: rem(101px);
+    margin-bottom: rem(43px);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__link {
+    width: rem(24px);
+
+    svg {
+      fill: #F5F5F5;
+      opacity: 0.31;
+    }
+  }
+
+  &__text {
+    color: #BBB;
+    font-family: $fontOpen;
+    font-size: rem(18px);
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: rem(40px);
+  }
+
+  &__form {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    @media (max-width: $tab) {
+      display: block;
+    }
+  }
+
+  &__input {
+    font-family: $fontOpen;
+    font-size: rem(18px);
+    line-height: rem(60px);
+    height: rem(60px);
+    border-radius: rem(8px);
+    width: rem(334px);
+    color: inherit;
+    background: #424242;
+    padding-left: rem(50px);
+    padding-right: rem(16px);
+    border: none;
+
+    @media (max-width: $tab) {
+      width: 100%;
+    }
+
+    &::placeholder {
+      color: #ADADAD;
+    }
+  }
+
+  &__button {
+    font-family: $fontOpen;
+    font-size: rem(18px);
+    line-height: rem(60px);
+    height: rem(60px);
+    border-radius: rem(8px);
+    width: rem(133px);
+    box-shadow: 0 rem(14px) rem(32px) 0 rgba(255, 178, 14, 0.29), 0 rem(5px) rem(8px) 0 rgba(222, 151, 0, 0.24);
+    background: #FF8A00;
+    color: #FFF;
+    font-weight: 700;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+
+    @media (max-width: $tab) {
+      width: 100%;
+      margin-top: rem(15px);
+    }
+  }
+
+  &__mail {
+    width: rem(24px);
+    position: absolute;
+    left: rem(16px);
+    top: rem(20px);
+  }
+}

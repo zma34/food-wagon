@@ -1,0 +1,85 @@
+.discounts {
+
+  &__inner {
+    padding-top: rem(80px);
+    padding-bottom: rem(80px);
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: $mobile) {
+      display: block;
+      padding-top: rem(30px);
+      padding-bottom: rem(30px);
+    }
+  }
+
+  &__card {
+    width: rem(357px);
+    display: block;
+
+    @media (max-width: $tab) {
+      width: rem(240px);
+    }
+
+    @media (max-width: $mobile) {
+      width: 100%;
+      margin-bottom: rem(15px);
+    }
+  }
+
+  &__author {
+    font-weight: 700;
+    font-size: rem(22px);
+    line-height: 1.2;
+    color: #424242;
+    margin-top: rem(32px);
+    margin-bottom: rem(14px);
+  }
+
+  &__days {
+    display: inline-block;
+    font-weight: 700;
+    font-size: rem(22px);
+    line-height: 1.2;
+    color: #F17228;
+    background: rgba(241, 114, 40, 0.2);
+    border-radius: rem(8px);
+    padding: rem(8px) rem(16px);
+  }
+
+  &__card-wrap {
+    position: relative;
+    border-radius: rem(16px);
+    overflow: hidden;
+  }
+
+  &__block {
+    background: #FFB30E;
+    border-radius: 0 rem(32px) 0 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: rem(10px) rem(18px);
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+  }
+
+  &__number {
+    font-weight: 700;
+    font-size: rem(68px);
+    line-height: 1;
+  }
+
+  &__percent {
+    font-weight: 700;
+    font-size: rem(35px);
+    line-height: 1;
+    display: block;
+  }
+
+  &__off {
+    font-size: rem(22px);
+    line-height: 1;
+  }
+}

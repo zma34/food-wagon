@@ -1,0 +1,121 @@
+{
+  "menu": {
+    "top": [
+      [
+        {
+          "name": "San Francisco"
+        },
+        {
+          "name": "Miami"
+        },
+        {
+          "name": "San Diego"
+        },
+        {
+          "name": "East Bay"
+        },
+        {
+          "name": "Long Beach"
+        }
+      ],
+      [
+        {
+          "name": "Los Angeles"
+        },
+        {
+          "name": "Washington DC"
+        },
+        {
+          "name": "Seattle"
+        },
+        {
+          "name": "Portland"
+        },
+        {
+          "name": "Nashville"
+        }
+      ],
+      [
+        {
+          "name": "New York City"
+        },
+        {
+          "name": "Orange County"
+        },
+        {
+          "name": "Atlanta"
+        },
+        {
+          "name": "Charlotte"
+        },
+        {
+          "name": "Denver"
+        }
+      ],
+      [
+        {
+          "name": "Chicago"
+        },
+        {
+          "name": "Phoenix"
+        },
+        {
+          "name": "Las Vegas"
+        },
+        {
+          "name": "Sacramento"
+        },
+        {
+          "name": "Oklahoma City"
+        }
+      ],
+      [
+        {
+          "name": "Columbus"
+        },
+        {
+          "name": "New Mexico"
+        },
+        {
+          "name": "Albuquerque"
+        },
+        {
+          "name": "Sacramento"
+        },
+        {
+          "name": "New Orleans"
+        }
+      ]
+    ],
+    "bottom": [
+      {
+        "name": "Company",
+        "list": [
+          {"name": "About us"},
+          {"name": "Team"},
+          {"name": "Careers"},
+          {"name": "Blog"}
+        ]
+      },
+
+      {
+        "name": "Contact",
+        "list": [
+          {"name": "Help & Support"},
+          {"name": "Partner with us"},
+          {"name": "Ride with us"}
+        ]
+      },
+
+      {
+        "name": "Legal",
+        "list": [
+          {"name": "Terms & Conditions"},
+          {"name": "Refund & Cancellation"},
+          {"name": "Privacy Policy"},
+          {"name": "Cookie Policy"}
+        ]
+      }
+    ]
+  }
+}

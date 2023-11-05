@@ -1,0 +1,156 @@
+.best-food {
+  padding-top: rem(135px);
+  padding-bottom: rem(135px);
+
+  @media (max-width: $tab) {
+    padding-top: rem(80px);
+    padding-bottom: rem(80px);
+  }
+
+  @media (max-width: $mobile) {
+    padding-bottom: rem(50px);
+    padding-top: rem(50px);
+  }
+
+  &__block {
+    position: relative;
+    height: rem(512px);
+    border-radius: rem(16px);
+    overflow: hidden;
+    box-shadow: 0 rem(27px) rem(82px) 0 rgba(124, 124, 124, 0.28), 0 rem(14px) rem(15px) 0 rgba(124, 124, 124, 0.06);
+
+    @media (max-width: $tab) {
+      height: rem(350px);
+    }
+
+    @media (max-width: $mobile) {
+      height: auto;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: rem(80px);
+
+      @media (max-width: $mobile) {
+       margin-bottom: rem(50px);
+      }
+    }
+
+    &:nth-child(even) {
+      .best-food__info {
+        right: 0;
+        left: auto;
+      }
+
+      .best-food__img {
+        left: 0;
+        right: auto;
+      }
+    }
+  }
+
+  &__info {
+    height: 100%;
+    width: rem(519px);
+    padding: rem(56px);
+    background: #FFFFFF;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    @media (max-width: $tab) {
+      z-index: 1;
+      padding: rem(30px);
+      width: rem(400px);
+    }
+
+    @media (max-width: $mobile) {
+      height: auto;
+      width: 100%;
+      position: static;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: rem(961px);
+
+    @media (max-width: $tab) {
+      width: rem(656px);
+    }
+
+    @media (max-width: $mobile) {
+      height: auto;
+      width: 100%;
+      position: static;
+    }
+  }
+
+  &__top {
+    height: rem(292px);
+    margin-bottom: rem(48px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media (max-width: $tab) {
+      height: rem(200px);
+      margin-bottom: rem(30px);
+    }
+
+    @media (max-width: $mobile) {
+      height: auto;
+    }
+  }
+
+  &__title {
+    font-size: rem(43px);
+    font-weight: 700;
+    line-height: 1.12;
+    color: #FFB30E;
+
+    @media (max-width: $tab) {
+      font-size: rem(38px);
+    }
+
+    .black {
+      color: #353535;
+    }
+  }
+
+  &__text {
+    color: rgba(97, 97, 97, 0.69);
+    font-family: $fontOpen;
+    font-size: rem(18px);
+    font-weight: 600;
+    line-height: 1.4;
+    margin-top: rem(19px);
+
+    @media (max-width: $tab) {
+      font-size: rem(15px);
+    }
+  }
+
+  &__button {
+    color: #FFF;
+    text-align: center;
+    font-size: rem(18px);
+    font-weight: 700;
+    line-height: rem(60px);
+    text-transform: uppercase;
+    width: 100%;
+    height: rem(60px);
+    background: #FFB30E;
+    box-shadow: 0 rem(14px) rem(32px) 0 rgba(255, 178, 14, 0.29), 0 rem(5px) rem(8px) 0 rgba(222, 151, 0, 0.24);
+    border-radius: rem(8px);
+    display: flex;
+    justify-content: center;
+
+    svg {
+      width: rem(10px);
+      margin-left: rem(10px);
+    }
+  }
+
+}

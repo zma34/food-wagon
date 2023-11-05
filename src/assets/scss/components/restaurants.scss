@@ -1,0 +1,152 @@
+.restaurants {
+  &__inner {
+    @media (max-width: $tab) {
+      overflow: hidden;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: rem(43px);
+    line-height: 1.12;
+    color: #212121;
+    text-align: center;
+    margin-bottom: rem(88px);
+
+    @media (max-width: $mobile) {
+      margin-bottom: rem(30px);
+    }
+  }
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: rem(24px);
+    margin-right: rem(-16px);
+
+    @media (max-width: $mobile) {
+      margin-right: 0;
+    }
+
+  }
+
+  &__card {
+    width: rem(357px);
+    position: relative;
+    margin-bottom: rem(64px);
+    margin-right: rem(16px);
+
+    @media (max-width: $tab) {
+      width: rem(320px);
+    }
+
+    @media (max-width: $mobile) {
+      width: 100%;
+    }
+
+  }
+
+  &__img {
+    border-radius: rem(16px);
+    overflow: hidden;
+  }
+
+  &__description {
+    display: flex;
+    margin-top: rem(24px);
+  }
+
+  &__logo {
+    width: rem(64px);
+    margin-right: rem(24px);
+  }
+
+  &__name {
+    font-weight: 700;
+    font-size: rem(22px);
+    line-height: 1.2;
+    margin-bottom: rem(4px);
+    color: #424242;
+  }
+
+  &__stars {
+    font-size: rem(22px);
+    line-height: 1.2;
+    color: #FFB30E;
+    display: flex;
+
+    svg {
+      width: rem(25px);
+      margin-right: rem(8px);
+    }
+  }
+
+  &__button {
+    display: block;
+    font-weight: 700;
+    font-size: rem(22px);
+    line-height: 1.2;
+    border-radius: rem(16px);
+    margin-top: rem(32px);
+    width: rem(196px);
+    height: rem(42px);
+    padding: rem(8px) 0;
+    text-align: center;
+    background: rgba(241, 114, 40, 0.2);
+    color: #F17228;
+
+    &.green {
+      background: rgba(121, 185, 60, 0.2);
+      color: #79B93C;
+    }
+  }
+
+  &__blocks {
+    display: flex;
+    position: absolute;
+    top: rem(24px);
+    left: rem(24px);
+  }
+
+  &__percent {
+    font-weight: 700;
+    font-size: rem(22px);
+    line-height: 1.2;
+    color: #FFFFFF;
+    background: #F17228;
+    border-radius: rem(8px);
+    padding: rem(8px) rem(16px);
+    margin-right: rem(8px);
+
+    &.time {
+      background: #FFB30E;
+    }
+
+    .icon {
+      width: rem(18px);
+      margin-right: rem(6px)
+    }
+  }
+
+  &__all {
+    display: block;
+    margin: auto;
+    font-weight: 700;
+    font-size: rem(18px);
+    line-height: 1;
+    text-align: center;
+    color: #FFFFFF;
+    width: rem(178px);
+    background: linear-gradient(97.86deg, #FFBA26 -8.95%, #FF9A0E 109.24%);
+    box-shadow: 0 rem(5px) rem(10px) rgba(255, 174, 0, 0.26), 0 rem(20px) rem(40px) rgba(255, 174, 0, 0.29);
+    border-radius: rem(14px);
+    padding: rem(21px) 0;
+
+    svg {
+      width: rem(9px);
+      margin-left: rem(10px);
+    }
+  }
+
+
+}

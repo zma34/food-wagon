@@ -1,0 +1,68 @@
+.work {
+  background: linear-gradient(180deg, rgba(255, 206, 103, 0.22) -42.47%, rgba(253, 237, 202, 0) 100%);
+  padding-top: rem(76px);
+  padding-bottom: rem(158px);
+
+  @media (max-width: $tab) {
+    padding-bottom: rem(100px);
+  }
+
+  @media (max-width: $mobile) {
+    padding-top: rem(30px);
+    padding-bottom: rem(30px);
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: rem(43px);
+    line-height: 1.12;
+    text-align: center;
+    color: #F17228;
+    margin-bottom: rem(52px);
+
+    @media (max-width: $mobile) {
+      margin-bottom: rem(15px);
+    }
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: $mobile) {
+      display: block;
+    }
+  }
+
+  &__card {
+    text-align: center;
+    width: rem(307px);
+
+    @media (max-width: $mobile) {
+      width: rem(300px);
+      margin: 0 auto rem(30px);
+    }
+  }
+
+  &__img {
+    width: auto;
+    height: rem(192px);
+    display: inline-block;
+  }
+
+  &__name {
+    font-weight: 700;
+    font-size: rem(22px);
+    line-height: 1.2;
+    color: #434343;
+    margin-top: rem(-22px);
+    margin-bottom: rem(10px);
+  }
+
+  &__text {
+    font-family: $fontOpen;
+    font-size: rem(18px);
+    line-height: 1.4;
+    color: #9E9E9E;
+  }
+}

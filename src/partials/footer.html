@@ -1,0 +1,35 @@
+<footer class="footer">
+  <div class="footer__inner g-inner">
+    <div class="footer__block">
+      <h2 class="footer__title">Our top cities</h2>
+      <nav class="footer__menu">
+        {{#each footer.menu.top}}
+        <div class="footer__column">
+          {{#each this}}
+          <a href="#" class="footer__link">{{name}}</a>
+          {{/each}}
+        </div>
+        {{/each}}
+
+      </nav>
+    </div>
+    <div class="footer__block block-2">
+      <nav class="footer__menu menu-2">
+        {{#each footer.menu.bottom}}
+        <div class="footer__column">
+          <h2 class="footer__title">{{name}}</h2>
+          {{#each list}}
+          <a href="#" class="footer__link">{{name}}</a>
+          {{/each}}
+        </div>
+        {{/each}}
+
+      </nav>
+      {{> contacts}}
+    </div>
+    <div class="footer__copy">
+      All rights Reserved &nbsp;&copy;&nbsp;
+      <span class="bold">Your Company, 2021</span>
+    </div>
+  </div>
+</footer>

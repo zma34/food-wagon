@@ -1,0 +1,109 @@
+.food {
+  margin-top: rem(80px);
+  height: rem(571px);
+  background: #FEFAF1;
+  padding-top: rem(82px);
+  padding-bottom: rem(55px);
+
+  @media (max-width: $mobile) {
+    padding-bottom: rem(30px);
+    padding-top: rem(30px);
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: rem(43px);
+    line-height: 1.12;
+    color: #212121;
+    margin-bottom: rem(116px);
+
+    @media (max-width: $mobile) {
+      font-size: rem(30px);
+      margin-bottom: rem(80px);
+      margin-top: rem(10px);
+    }
+  }
+
+  &__wrap {
+    position: relative;
+  }
+
+  &__slider {
+    margin-left: rem(-15px);
+    margin-right: rem(-15px);
+    padding-left: rem(15px);
+  }
+
+  &__card {
+    font-weight: 700;
+    font-size: rem(22px);
+    line-height: 1.2;
+    color: #424242;
+    width: rem(218px);
+    text-align: center;
+    margin-right: rem(34px);
+
+    @media (max-width: $tab) {
+      width: rem(220px);
+      margin-right: rem(37px);
+    }
+
+    @media (max-width: $mobile) {
+      width: rem(250px);
+      margin-right: rem(40px);
+    }
+  }
+
+  &__img {
+    border-radius: 50%;
+    margin-bottom: rem(26px);
+  }
+
+  &__all {
+    font-weight: 700;
+    font-size: rem(18px);
+    line-height: 1.0;
+    text-align: center;
+    color: #FFB30E;
+    position: absolute;
+    top: rem(-135px);
+    right: rem(212.5px);
+
+    @media (max-width: $mobile) {
+      position: static;
+      margin-top: rem(50px);
+      display: block;
+      font-size: rem(30px);
+    }
+
+    svg {
+      width: rem(9px);
+      margin-left: rem(10px);
+    }
+
+  }
+
+  &__arr {
+    width: rem(76px);
+    height: rem(76px);
+    background: #FFB30E url("/assets/img/arr.svg") no-repeat center;
+    background-size: rem(18px);
+    border-radius: 50%;
+    box-shadow: 0 rem(5px) rem(8px) rgba(222, 151, 0, 0.24), 0 rem(14px) rem(32px) rgba(255, 178, 14, 0.29);
+    position: absolute;
+    top: rem(-164px);
+
+    @media (max-width: $mobile) {
+      top: rem(-130px);
+    }
+
+    &.left {
+      right: rem(110px);
+    }
+
+    &.right {
+      right: rem(18px);
+      transform: scale(-1);
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@charset "utf-8";
+@import "global/reset";
+@import "global/mixins";
+@import "global/vars";
+@import "global/main";
+
+@import "lib/swiper-bundle.min";
+
+@import "components/header";
+@import "components/intro";
+@import "components/discounts";
+@import "components/work";
+@import "components/popular";
+@import "components/restaurants";
+@import "components/food";
+@import "components/delivery";
+@import "components/app";
+@import "components/best-food";
+@import "components/end";
+@import "components/footer";
+@import "components/contacts";

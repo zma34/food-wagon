@@ -1,0 +1,111 @@
+.header {
+  height: rem(78px);
+
+  @media (max-width: $tab) {
+    height: rem(120px);
+  }
+
+  @media (max-width: $mobile) {
+    height: rem(78px);
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+
+    @media (max-width: $tab) {
+      position: relative;
+      display: block;
+      padding: rem(15px);
+    }
+  }
+
+  &__logo {
+    width: rem(197px);
+
+    @media (max-width: $tab) {
+      width: rem(244px);
+    }
+  }
+
+  &__text{
+    display: flex;
+
+    @media (max-width: $tab) {
+      margin-top: rem(15px);
+    }
+
+    @media (max-width: $mobile) {
+      display: none;
+    }
+  }
+
+  &__caption {
+    margin-right: rem(12px);
+    font-weight: 700;
+    font-size: rem(18px);
+  }
+
+  &__mark {
+    width: rem(14px);
+  }
+
+  &__location{
+    font-family: $fontOpen;
+    font-size: rem(18px);
+    margin-left: rem(9px);
+  }
+
+  &__address{
+    font-family: $fontOpen;
+    font-weight: 700;
+    font-size: rem(18px);
+    margin-left: rem(4px);
+  }
+
+  &__right{
+    display: flex;
+
+    @media (max-width: $tab) {
+      position: absolute;
+      top: rem(15px);
+      right: rem(15px);
+    }
+  }
+
+  &__search{
+    font-weight: 700;
+    font-size: rem(18px);
+    color: #424242;
+    display: flex;
+    align-items: center;
+    margin-right: rem(30px);
+
+    @media (max-width: $mobile) {
+      display: none;
+    }
+
+    svg {
+      margin-right: rem(8px);
+      width: rem(19px);
+    }
+  }
+
+  &__login{
+    font-weight: 700;
+    font-size: rem(18px);
+    color: #FFB800;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 rem(5px) rem(10px) rgba(255, 174, 0, 0.26), 0 rem(20px) rem(40px) rgba(255, 174, 0, 0.29);
+    border-radius: rem(8px);
+    padding: rem(14px) rem(24px);
+
+    svg {
+      margin-right: rem(10px);
+      width: rem(16px);
+    }
+  }
+}
